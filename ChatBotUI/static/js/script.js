@@ -59,7 +59,7 @@ msgerForm.addEventListener("submit", async (event) => {
   msgerInput.value = "";
 
   // FIX-ME: change this payload data
-  let requestPayload = { query: msgText, type: "",location:false };
+  let requestPayload = { query: msgText, type: ""};
   let response = await sendMessageApiCall(requestPayload);
 });
 
