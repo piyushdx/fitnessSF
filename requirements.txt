@@ -1,0 +1,7 @@
+Flask
+openai
+flask_cors
+langchain
+chromadb
+pypdf
+tiktoken
