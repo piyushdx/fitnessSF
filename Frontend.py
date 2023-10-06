@@ -1,8 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template,request,jsonify
 import os
 import threading
 import re
 from config import config, environment, ip_config
+import pandas as pd
+import random
+import json
 
 # ===================================================================================================
 IP = ip_config[environment]
@@ -26,11 +29,17 @@ app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
 
 @app.route('/')
 def index():
-    return "check /fitnesssf"
+    return render_template('index.html')
 
-@app.route('/fitnesssf')
-def UltraBot():
-    return render_template('fitnesssf.html')
+@app.route('/MembershipBot')
+def MembershipBot():
+    # save_location()
+    return render_template('MembershipBot_index.html')
+
+@app.route('/Payment')
+def Payment():
+    return render_template('payment.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=config['BotApplication']['Frontend'])

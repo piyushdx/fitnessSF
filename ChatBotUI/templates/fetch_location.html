@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation Example</title>
+</head>
+<body>
+    <p id="cityResult"></p>
+
+    <script>
+        function getLocation() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var latitude = position.coords.latitude;
+                    var longitude = position.coords.longitude;
+                    console.log("Latitude: " + latitude);
+                    console.log("Longitude: " + longitude);
+
+                    // Fetch the city name using reverse geocoding
+                    fetch(`/get_city?lat=${latitude}&lon=${longitude}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            var city = data.city;
+                            console.log("City: " + city);
+
+                            // Send location data to Flask endpoint
+                            sendLocationToFlask(latitude, longitude, city);
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                        });
+                });
+            } else {
+                console.log("Geolocation is not available in this browser.");
+            }
+        }
+
+        function sendLocationToFlask(latitude, longitude, city) {
+            // Create a JSON object with the location data
+            var locationData = {
+                latitude: latitude,
+                longitude: longitude,
+                city: city
+            };
+
+            // Send a POST request to the Flask endpoint
+            fetch('/save_location', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json' // Specify the content type as JSON
+                },
+                body: JSON.stringify(locationData)
+            })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Location data sent to Flask.');
+                } else {
+                    console.error('Failed to send location data to Flask.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        getLocation();
+    </script>
+</body>
+</html>

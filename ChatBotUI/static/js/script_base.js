@@ -32,8 +32,9 @@ const lastWord = urlParts[urlParts.length - 1]; // Get the last element
 // var cache_value = ""
 const base_url = "http://127.0.0.1:1563/"
 const url_dictionary = {
-  "get_response": {"fitnesssf":"FitnessSF_get_response",},
-  "clear_cache": {"fitnesssf":"FitnessSF_clear_cache",}
+  "get_response": {"MembershipBot":"Membership_get_response",},
+
+  "clear_cache": {"MembershipBot":"Membership_clear_cache",}
 }
 
 
@@ -353,6 +354,53 @@ function nl2br(input, is_xhtml) {
 }
 
 
+//function makeUrlsClickable(messages) {
+//  if (!Array.isArray(messages)) {
+//    return messages;
+//  }
+//
+//  const urlRegex = /(https?:\/\/?\S+)/g;
+//
+//  return messages.map((message) => {
+//    if (typeof message !== "string") {
+//      return message;
+//    }
+//
+//    return message.replace(urlRegex, (url) => {
+//      const href = url.trim();
+//      return `<a href="${href}" target="_blank">${url}</a>`;
+//    });
+//  });
+//}
+
+
+// function replaceURLsWithLinks(textArray) {
+//   // Regular expression to match URLs
+//   const urlRegex = /(https?:\/\/[^\s]+)/g;
+//   console.log("textt")
+//   console.log(textArray)
+// //  // Process each string in the array
+// //  const replacedArray = textArray.map(text => {
+// //    // Replace URLs with 'link'
+// //    return text.replace(urlRegex, 'link');
+// //  });
+
+//   // Process each string in the array
+//   const replacedArray = textArray.map(text => {
+//     // Replace URLs with clickable links
+//     return text.replace(urlRegex, (url) => {
+// //      return <a href="${url}" target="_blank">${url}</a>;
+//         console.log(url);
+// //      return `<a href="${url}" target="_blank">${url}</a>`;
+//       return '<a href="' + url + '" target="_blank">' + 'view' + '</a>';
+//     });
+//   });
+
+//   return replacedArray;
+// }
+
+
+
 
 function botResponse(requestPayload) {
   let msgText = requestPayload.response;
@@ -490,31 +538,31 @@ function deleteChatData() {
 //   }
 // }
 
-function sendCityToServer(latitude,longitude) {
-  // Prepare the data to send in the POST request
-  var requestData = {
-    query: latitude + "+" + longitude,
-    type: "string",
-    location:true
-  };
+// function sendCityToServer(latitude,longitude) {
+//   // Prepare the data to send in the POST request
+//   var requestData = {
+//     query: latitude + "+" + longitude,
+//     type: "string",
+//     location:true
+//   };
 
-  // Send the POST request to the server
-  fetch(modifiedURL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(requestData)
-  })
-  .then(response => response.json())
-  .then(responseData => {
-    console.log("Server response:", responseData);
-  })
-  .catch(error => {
-    console.error("Error:", error);
-  });
-}
-getLocation();
+//   // Send the POST request to the server
+//   fetch(modifiedURL, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json"
+//     },
+//     body: JSON.stringify(requestData)
+//   })
+//   .then(response => response.json())
+//   .then(responseData => {
+//     console.log("Server response:", responseData);
+//   })
+//   .catch(error => {
+//     console.error("Error:", error);
+//   });
+// }
+// getLocation();
 // const userName = document.querySelector('.msg-text strong').textContent;
 
 // // Make a POST request to the backend

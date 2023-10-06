@@ -1,0 +1,92 @@
+  <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Membership Bot</title>
+  <link rel="stylesheet" href="static/css/style2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="msger">
+  <header class="msger-header">
+    <div class="msger-header-title">
+     Membership Bot
+    </div>
+    <div class="msger-header-options">
+      <button class="clear-chat" id="clearChatButton"><span class="tooltip-chat"><i class="fa fa-refresh" ></i></span></button>
+    </div>
+  </header>
+
+  <main class="msger-chat">
+    <div class="msg left-msg">
+<!--      <div-->   
+<!--       class="msg-img"-->
+<!--       style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"-->
+<!--      ></div>-->
+
+      <div
+       class="msg-img"
+       style="background-image: url(static/images/bot.ico)"
+      ></div>
+
+      <div class="msg-bubble">
+        <div class="msg-info">
+          <div class="msg-info-name">ALEX</div>
+          <div class="msg-info-time"></div>
+        </div>
+
+      <div class="msg-text">
+          Hi, Welcome to Fitness SF! What is your purpose to join the gym?
+      </div>
+
+        
+<!--          <a class="video-link" href="https://www.youtube.com/watch?v=TORfAEp8AUs" target="_blank">-->
+<!--              <img class="video-thumbnail no-padding" src="https://img.youtube.com/vi/TORfAEp8AUs/maxresdefault.jpg" alt="Video Preview">-->
+<!--          </a>-->
+<!--          <div class="video-title" id="video-title">Apple MacBook Air 15” - First Time in 15 Years !-->
+<!--          <a class="video-url" href="https://www.youtube.com/watch?v=TORfAEp8AUs" target="_blank">Watch on YouTube</a>-->
+          
+        
+      </div>
+      </div>
+
+     <!-- <div id="loading-icon" class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+     </div> -->
+
+    </div>
+
+    </div>
+  </main>
+
+  <form class="msger-inputarea">
+    <input type="text" class="msger-input" placeholder="Enter your message...">
+    <button type="submit" class="msger-send-btn" id="SendBtnID"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+    <!-- The pop-up -->
+    
+    <button class="pop-up-button" onclick="openPopup()"><span class="tooltip"><i class="fa fa-lightbulb-o"></i></span></button>
+    <div id="myPopup" class="popup">
+      <div class="popup-content">
+        <p class="example-title">Examples</p>
+        <p class="example">I want to buy a membership</p>
+        <p class="example">I want to cancel my membership</p>
+        <!--<p class="example">I want to book personal trainer</p>
+        <p class="example">I want to schedule an appointment</p> --> 
+
+        <span class="popup-close" onclick="closePopup()"><i class="fa fa-times"></i></span>
+      </div>
+    </div>
+  </form>
+</section>
+<!-- partial -->
+  <script  src="static/js/script.js"></script>
+  <script>
+
+
+    </script>
+</body>
+</html>
