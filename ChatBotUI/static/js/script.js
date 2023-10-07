@@ -30,7 +30,7 @@ const urlParts = currentURL.split('/'); // Split the URL by '/'
 const lastWord = urlParts[urlParts.length - 1]; // Get the last element
 // var url = ""
 // var cache_value = ""
-const base_url = "http://127.0.0.1:5001/"
+const base_url = "http://127.0.0.1:5003/"
 const url_dictionary = {
   "get_response": {"fitnesssf":"FitnessSF_get_response",},
   "clear_cache": {"fitnesssf":"FitnessSF_clear_cache",}
@@ -490,31 +490,31 @@ function deleteChatData() {
 //   }
 // }
 
-function sendCityToServer(latitude,longitude) {
-  // Prepare the data to send in the POST request
-  var requestData = {
-    query: latitude + "+" + longitude,
-    type: "string",
-    location:true
-  };
+// function sendCityToServer(latitude,longitude) {
+//   // Prepare the data to send in the POST request
+//   var requestData = {
+//     query: latitude + "+" + longitude,
+//     type: "string",
+//     location:true
+//   };
 
-  // Send the POST request to the server
-  fetch(modifiedURL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(requestData)
-  })
-  .then(response => response.json())
-  .then(responseData => {
-    console.log("Server response:", responseData);
-  })
-  .catch(error => {
-    console.error("Error:", error);
-  });
-}
-getLocation();
+//   // Send the POST request to the server
+//   fetch(modifiedURL, {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json"
+//     },
+//     body: JSON.stringify(requestData)
+//   })
+//   .then(response => response.json())
+//   .then(responseData => {
+//     console.log("Server response:", responseData);
+//   })
+//   .catch(error => {
+//     console.error("Error:", error);
+//   });
+// }
+// getLocation();
 // const userName = document.querySelector('.msg-text strong').textContent;
 
 // // Make a POST request to the backend

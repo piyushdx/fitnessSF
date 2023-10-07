@@ -9,11 +9,11 @@ openai.api_type = 'azure'
 openai.api_version = '2023-05-15'  # this may change in the future
 deployment_name = 'DX-GPT35'
 
-def get_completion():
+def get_completion(history):
     completion = openai.ChatCompletion.create(
         # model="gpt-3.5-turbo",
         engine=deployment_name,
-        messages=state,
+        messages=history,
         temperature=0.7,
         timeout=10,
     )
@@ -75,17 +75,20 @@ A. We work with many corporate partners in the Bay Area. If your company is inte
 
 class FitnessSF():
     def __init__(self):
-        self.history = state
-
+        self.history = state.copy()
+    
     def clear_cache(self):
-        self.history = state
+        self.history = state.copy()
+        print(f"cache is cleared")
         return jsonify({"status": "True"})
 
     def get_response(self, data):
         query = data["query"]
         self.history.append({"role": "user", "content": f"{query}"})
         try:
-            response = get_completion()
+            response = get_completion(self.history)
+            self.history.append({"role": "assistant", "content": f"{response}"})
         except Exception as e:
             return jsonify({"response": f"Try After Sometime | {e}"})
+        print(self.history)
         return jsonify({"response": response})
