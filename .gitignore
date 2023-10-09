@@ -55,6 +55,10 @@ cover/
 *.mo
 *.pot
 
+#folder
+MembeshipBot
+Memory
+
 # Django stuff:
 *.log
 local_settings.py

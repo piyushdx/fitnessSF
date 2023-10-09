@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 from config import config, environment, ip_config
 import re
-from fitnesssf import FitnessSF
+from fitnesssf1 import FitnessSF
 import os
 app = Flask(__name__)
 CORS(app, support_credentials=True)
