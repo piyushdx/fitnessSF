@@ -4,6 +4,7 @@ import threading
 import re
 from config import config, environment, ip_config
 from flask_cors import CORS, cross_origin
+from flask_talisman import Talisman
 
 # ===================================================================================================
 IP = ip_config[environment]
@@ -26,8 +27,15 @@ STATIC_DIR = os.path.abspath('ChatBotUI/static')
 
 # app = Flask(__name__) # to make the app run without any
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
-# CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
+# cors = CORS(app, resources={r"/*": {"origins": "*"}})
+# csp = {
+#     "default-src": "'self'",
+#     "script-src": ["'self'", "/static/"],
+#     "style-src": ["'self'", "/static/"],
+#     # Add more directives as needed
+# }
+# talisman = Talisman(app, content_security_policy=csp)
 
 
 @app.route('/')
