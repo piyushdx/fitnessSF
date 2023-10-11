@@ -4,7 +4,6 @@ import threading
 import re
 from config import config, environment, ip_config
 from flask_cors import CORS, cross_origin
-from flask_talisman import Talisman
 
 # ===================================================================================================
 IP = ip_config[environment]

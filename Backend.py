@@ -5,7 +5,6 @@ from config import config, environment, ip_config
 import re
 from fitnesssf1 import FitnessSF
 import os
-from flask_talisman import Talisman
 
 app = Flask(__name__)
 # CORS(app, support_credentials=True)
