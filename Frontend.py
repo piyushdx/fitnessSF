@@ -27,20 +27,14 @@ STATIC_DIR = os.path.abspath('ChatBotUI/static')
 
 # app = Flask(__name__) # to make the app run without any
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
-CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
-# cors = CORS(app, resources={r"/*": {"origins": "*"}})
-# csp = {
-#     "default-src": "'self'",
-#     "script-src": ["'self'", "/static/"],
-#     "style-src": ["'self'", "/static/"],
-#     # Add more directives as needed
-# }
-# talisman = Talisman(app, content_security_policy=csp)
+# CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
+
 app.config['CSP'] = {
     'default-src': "'self'",
     'script-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'", "/static/"],
-    'style-src': ["'self'", "'unsafe-inline'", "/static/"],
-    'font-src': ["'self'", 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', '/static/'],
+    'style-src': ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", "/static/"],
+    'font-src': ["'self'", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", "/static/"],
     'frame-src': [
         "https://sf.clubautomation.com/",
         "https://www.qa-1.chewba.info",
@@ -48,9 +42,10 @@ app.config['CSP'] = {
         "https://www.eatlove.is",
         "https://www.youtube.com/",
         "https://fsf-digital.s3.us-west-1.amazonaws.com/",
-        "http://18.144.92.141:5004/"
+        "http://18.144.92.141:5004"
     ]
 }
+
 
 
 # csp(app)
