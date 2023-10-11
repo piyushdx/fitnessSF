@@ -13,7 +13,7 @@ const BOT_MSGS = [
 // Icons made by Freepik from www.flaticon.com
 const BOT_IMG = "static/images/bot.ico";
 const PERSON_IMG = "static/images/user3.png";
-const BOT_NAME = "ALEX";
+const BOT_NAME = "FITNESS SF AI Agent";
 const PERSON_NAME = "User";
 // const workout_type : droupdown
 // const equipment  : dropdown
