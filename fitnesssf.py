@@ -6,8 +6,8 @@ import openai
 openai.api_key = os.environ.get("AZURE_OPENAI_API_KEY")
 openai.api_base = "https://dxfactor-openai.openai.azure.com/"
 openai.api_type = 'azure'
-openai.api_version = '2023-05-15'  # this may change in the future
-deployment_name = 'DX-GPT35'
+openai.api_version = '2023-07-01-preview'  # this may change in the future
+deployment_name = 'DX-GPT35-16k'
 
 def get_completion(history):
     completion = openai.ChatCompletion.create(
