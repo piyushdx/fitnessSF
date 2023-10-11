@@ -41,7 +41,15 @@ app.config['CSP'] = {
     'script-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'", "/static/"],
     'style-src': ["'self'", "'unsafe-inline'", "/static/"],
     'font-src': ["'self'", 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', '/static/'],
-    'frame-src':["https://sf.clubautomation.com/", "https://www.qa-1.chewba.info", "https://www.qa-2.chewba.info", "https://www.eatlove.is", "https://www.youtube.com/", "https://fsf-digital.s3.us-west-1.amazonaws.com/"]
+    'frame-src': [
+        "https://sf.clubautomation.com/",
+        "https://www.qa-1.chewba.info",
+        "https://www.qa-2.chewba.info",
+        "https://www.eatlove.is",
+        "https://www.youtube.com/",
+        "https://fsf-digital.s3.us-west-1.amazonaws.com/",
+        "http://18.144.92.141:5004/"
+    ]
 }
 
 
