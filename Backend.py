@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 # CORS(app, support_credentials=True)
 # CORS(app, origins="*")
-CORS(app, resources={r"/fitnesssf": {"origins": "*"}})
+CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
 import os
 
 fitnessf = FitnessSF()
