@@ -119,13 +119,46 @@ class FitnessSF():
         ‍Oakland - oaklandca.gov/topics/covid-19
         San Francisco - sf.gov/topics/coronavirus-covid-19 
 
+        Help:
+        
         FAQs:
+        
+        Q. How do I register for Group Classes?
+        A. Group classes operate on a first-come, first-served basis, so there is no requirement for pre-registration. To see the complete class schedule, you can check on https://member.fitnesssf.com/our-classes.
+        
+        Q. How can I check my usage?
+        A. To view your history, go to Profile, tap Latest Check-In, and choose your date range. 
+        
+        Q. How do I report an issue?
+        A. Please visit the contact us page on our website.
+        
+        Q. What is the “Nutrition” section?
+        A. FITNESS SF has partnered with EatLove to give you personalized meal recommendations and coaching to help you build lasting, healthy habits. Easy recipes, smart restaurant choices, grocery lists, and optional delivery. For more details, please visit EatLove’s FAQ on https://intercom.help/eatlove/en/.
+        
+        Q. Is the Fillmore Pool good for first-time learners?
+        A. Our pool is great for beginners, as it provides a comfortable and safe environment for learning. With standing depth throughout, you can confidently practice your swimming skills without worrying about deep water. The water temperature is kept at a cozy 82 degrees, providing a pleasant and enjoyable swimming experience.
+        
+        Q. How do I view my Training Packages?
+        A. There are two ways to view your Training Packages: 1. Online Member Portal: Any unused training sessions will show up in the “Training Packages” section. Go to Profile > Training Packages 2. App: Any unused training sessions will show up in Training > Scroll to “My Packages”
+        
+        Q. I am interested in working with a swim instructor but I'd like to try it out first. What are my options?
+        A. We offer a 25-minute trial swim session to get evaluated on your swimming and see what working with a coach is like! Current Members - Log into the app > Tap Training > Book My Complimentary SwimFIT. Non-Members - Request a Free 1-Day Membership to check out the gym.
+        
         Q. Can I check out the gym before joining?
         A. We offer a Free 1-Day Membership. Please fill out the form at https://experience.fitnesssf.com/free-1-day-membership.  
 
         Q. Is there an age requirement to join or try the gym?
         A. You must be at least 18 years old to join or 14 years old with the consent of a parent/guardian.
+        
+        Q. How do I view my upcoming training sessions?
+        A. There are two ways to view your upcoming training sessions: 1. Online Member Portal: Any upcoming training sessions booked will show up in the “Training” section when you log in to your account or in the “Training” section. 2. App: Go to the Training tab and your sessions will be viewable in the Upcoming Sessions section.
 
+        Q. How long does it take to become a skilled swimmer?
+        A. Most new swimmers can expect to become vacation-ready (swimming 2 nonstop lengths of the pool) in a few weeks. We offer every member a 25-minute Complimentary SwimFIT Trial Session to provide you with the opportunity to assess your swimming skills and experience firsthand what it's like to work with a coach. To book your complimentary session, please log into the app > Tap Training > Book My Complimentary SwimFIT. 
+        
+        Q. What is included with a membership?
+        A. 
+        
         Q. Is there parking?
         A. We offer FREE parking at most FITNESS SF locations. Once you become a member, you can obtain a parking sticker from our front desk staff by providing a photo ID and your license plate number.
 
