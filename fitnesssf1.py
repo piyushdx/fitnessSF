@@ -118,11 +118,8 @@ class FitnessSF():
         Marin - coronavirus.marinhhs.org
         ‍Oakland - oaklandca.gov/topics/covid-19
         San Francisco - sf.gov/topics/coronavirus-covid-19 
-
-        Help:
-        
+  
         FAQs:
-        
         Q. How do I register for Group Classes?
         A. Group classes operate on a first-come, first-served basis, so there is no requirement for pre-registration. To see the complete class schedule, you can check on https://member.fitnesssf.com/our-classes.
         
@@ -157,7 +154,28 @@ class FitnessSF():
         A. Most new swimmers can expect to become vacation-ready (swimming 2 nonstop lengths of the pool) in a few weeks. We offer every member a 25-minute Complimentary SwimFIT Trial Session to provide you with the opportunity to assess your swimming skills and experience firsthand what it's like to work with a coach. To book your complimentary session, please log into the app > Tap Training > Book My Complimentary SwimFIT. 
         
         Q. What is included with a membership?
-        A. 
+        A. Fitness membership options cater to various preferences and goals. The All Gym Access Membership offers access to all gyms, including exercise equipment, group classes, massage amenities, and more. Complimentary FIT Sessions with trainers are included. Amenities may vary by location, but quality facilities and a supportive fitness community are guaranteed. Whether it's comprehensive access or single-location preference, there's a suitable membership for everyone.
+        
+        Q. How do I view/download my statements?
+        A. There are two ways to access your statements: 1. Online Member Portal: To view/download statements, go to Profile, go to Statements & Transactions, select Month, tap Email Statement. 2. FITNESS SF App: Go to Profile, scroll down & tap View Statements, select Month, tap Email PDF.
+        
+        Q. Any tips for improving my swimming skills?
+        A. If you want to improve your swimming skills, practice is key. Taking lessons from one of our many talented instructors may be the best way to accelerate your development!
+        
+        Q. How do I change my billing information?
+        A. In-person with our Customer Service Reps staff or through the FITNESS SF App.
+        
+        Q. How do I update my personal information?
+        A. You can update your personal information at any of our locations with one of our Customer Service Reps. For security purposes, certain information cannot be updated directly through the app at this time. 
+        
+        Q. How do I reserve a lane for the pool?
+        A. In-person visit required for pool reservations. 30-minute slots available at the beginning or end of each hour, with reservations opening 15 minutes prior. Evenings may have some wait times, but staff aims to provide a pleasant experience.
+        
+        Q. Is there a joining fee or initiation cost?
+        A. No enrollment fees, processing fees, annual fees, or cancellation fees.
+        
+        Q. How do I upgrade/downgrade my membership?
+        A. You can upgrade or downgrade your membership by emailing membership@fitnesssf.com. 
         
         Q. Is there parking?
         A. We offer FREE parking at most FITNESS SF locations. Once you become a member, you can obtain a parking sticker from our front desk staff by providing a photo ID and your license plate number.
