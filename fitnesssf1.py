@@ -42,7 +42,7 @@ class FitnessSF():
         OAKLAND - Featured Amenities: Full Weight Floor and Cardio Deck, Functional Training and Turf Area, Stretching Area, Group Fitness Studio,Free Weights, Olympic Lifting Platforms & Power Racks, Plate-Loaded Equipment, Selectorized Machines, Cardio Machines, Stretching & Recovery Area, Hyperice Station with Massage Tools, Metered Parking.
         SF CASTRO - Featured Amenities: Full Weight Floor and Cardio Deck, Functional Training and Turf Area, Olympic Lifting Platforms, Free Weights, Olympic Lifting Platforms & Power Racks ,Plate-Loaded Equipment, Selectorized Machines, Cardio Machines, Stretching & Recovery Area ,Hydro-Massage Bed, Hyperice Station with Massage Tools , Human Touch Massage Chairs,Member Parking, Bike Parking
         SF EMBARCADERO - Featured Amenities: Full Weight Floor and Cardio Deck, Functional Training Area,Free Weights, Olympic Lifting Platforms & Power Racks, Plate-Loaded Equipment, Selectorized Machines, Functional Training Studio , Outdoor Turf Zone , Cardio Machines, Stretching & Recovery Area, Hyperice Station with Massage Tools, Human Touch Massage Chairs,Bike Parking, Validated Parking
-        SF FILLMORE - Featured Amenities: Full Weight Floor and Cardio Deck, Free Weights, Olympic Lifting Platforms & Power Racks, Plate-Loaded Equipment, Selectorized Machines, Functional Training Turf Zone, Cardio Machines, Group Fitness Classes, 25 Yard Five-Lane Pool, Hot Tub/Spa, Stretching & Recovery Area, Hydro-Massage Bed, Hyperice Station with Massage Tools, Human Touch Massage Chairs,Men’s Dry Sauna, Women’s Dry Sauna, Validated Parking, Bike Parking.
+        SF FILLMORE - Featured Amenities: Full Weight Floor and Cardio Deck, Free Weights, Olympic Lifting Platforms & Power Racks, Plate-Loaded Equipment, Selectorized Machines, Functional Training Turf Zone, Cardio Machines, Group Fitness Classes, 25 Yard Five-Lane Pool, Hot Tub/Spa, Stretching & Recovery Area, Hydro-Massage Bed, Hyperice Station with Massage Tools, Human Touch Massage Chairs,Men's Dry Sauna, Women's Dry Sauna, Validated Parking, Bike Parking.
         SF MID MARKET - Featured Amenities: Full Weight Floor and Cardio Deck, Olympic Lifting Platforms, Three Group Fitness Studios, Performance Training Center, Treadwall, Turf Zone, Hyperice Station with Massage Tools, Group Fitness Classes (2 Studios - Energy & Escape), Selectorized Machines,Bike Parking, Performance Training Center (Exclusive for Personal Training Clients).
         SF SOMA - Featured Amenities: Free Weights,Cardio Machines,Olympic Lifting Platforms & Power Racks,Plate-Loaded Equipment, Functional Training Area, Turf Zone, Human Touch Massage Chairs,Hyperice Station with Massage Tools, Hydro-Massage Bed, Stretching & Recovery Area,Dog Room,Bike Parking,Member Parking.
         SF TRANSBAY - Featured Amenities: 15 Olympic Lifting Platforms, Plate-Loaded Equipment, Selectorized Machines, Athletic Training Center, Group Classes, 3 Studios - Recovery, Energy, & Escape, Athletic Training Center and Turf Zone, Stretching and Recovery Area, Hydro-Massage Beds,Hyperice Station with Massage Tools,Human Touch Massage Chairs, Heated Towel Racks, Toto Washlets - Bidet, Dry Bar, LG Style Steamer Clothing Care, Salesforce Park Classes (Open to everyone).
@@ -130,7 +130,7 @@ class FitnessSF():
         A. Please visit the contact us page on our website.
         
         Q. What is the “Nutrition” section?
-        A. FITNESS SF has partnered with EatLove to give you personalized meal recommendations and coaching to help you build lasting, healthy habits. Easy recipes, smart restaurant choices, grocery lists, and optional delivery. For more details, please visit EatLove’s FAQ on https://intercom.help/eatlove/en/.
+        A. FITNESS SF has partnered with EatLove to give you personalized meal recommendations and coaching to help you build lasting, healthy habits. Easy recipes, smart restaurant choices, grocery lists, and optional delivery. For more details, please visit EatLove's FAQ on https://intercom.help/eatlove/en/.
         
         Q. Is the Fillmore Pool good for first-time learners?
         A. Our pool is great for beginners, as it provides a comfortable and safe environment for learning. With standing depth throughout, you can confidently practice your swimming skills without worrying about deep water. The water temperature is kept at a cozy 82 degrees, providing a pleasant and enjoyable swimming experience.
@@ -173,6 +173,40 @@ class FitnessSF():
         
         Q. Is there a joining fee or initiation cost?
         A. No enrollment fees, processing fees, annual fees, or cancellation fees.
+        
+        Q. What things should i carry for swimming session?
+        A. Swimsuit, cap (required), goggles (optional). We sell caps and goggles at the front along with nose and ear plugs.
+        
+        Q. How do I update my billing information or make a payment?
+        A. Online Member Portal: Log into your account through our Online Member Portal. Go to Profile > Billing Information > Add New Payment Method . To pay a balance due, go to Profile > Billing Information > Make a Payment. App:Log into your account through our App. Go to Profile > Scroll down to 'My Payment Method' > Manage > Tap the 'Pencil' icon on the visible card. To pay a balance due, go to Profile > Scroll down > Tap 'Pay Now' 
+        *Please note that it can take up to 24 hours for your payment to be processed and posted to your account.
+        
+        Q. How do I cancel membership?
+        A. FITNESS SF App - Please submit a Cancellation Request through our app. Go to Profile > My Membership > Manage > Cancel Membership. In-Gym Kiosk - Please fill out our Cancellation Request Form located at the Front Desk at any location. For additional details, visit www.fitnesssf.com/terms-and-conditions.
+        
+        Q. How do I get my username and password?
+        A. After you join FITNESS SF, you will receive an email to set up your password.
+        
+        Q. Can swimming help me stay fit while recovering from an injury?
+        A. While it is important to consult your doctor following any injury, swimming is a gentle, low-impact exercise loved by athletes during recovery.
+        
+        Q. How do I freeze my membership?
+        A. 1. FITNESS SF App - Please submit a Freeze Request through our app. Go to Profile > My Membership > Manage > Freeze Membership 2. Email - Please send an email to freeze@fitnesssf.com. For additional details, visit fitnesssf.com/terms-and-conditions.
+        
+        Q. How do I log into my FITNESS SF account?
+        A. Please download our app through the App Store or Google Play. You can also log in through our Web Portal from any web browser. If you are having any issues logging into your account, please hit "forgot password" to reset your password. If you are continuing to experience issues, please contact us directly ON https://www.fitnesssf.com/contact
+        
+        Q. Is Personal Training only for beginners?
+        A. Personal Training is for everyone, no matter the skill level.
+        
+        Q. What is a FIT Session and how can I book it?
+        A. The FIT session is a 50-minute Complimentary Training Session customized to your preferences. Our trainers are experts in various areas, including One-on-One Yoga, Pilates, BodyBuilding, Powerlifting, Olympic Lifting, Fat Loss, Functional Training, Mobility, Stretching, Nutrition, and more. To schedule your Complimentary FIT Session, log into the app, navigate to Training, scroll down, and tap "Book Your Complimentary FIT Session.
+        
+        Q. How do I inquire about Personal Training?
+        A. The best way to speak with one of our fitness professionals is to book your Complimentary FIT Session. To do so, please log into the app, go to Training > Scroll Down, and Tap "Book Your Complimentary FIT Session".If you are not a member, you can request your Free 1-Day Membership or stop by any of our locations to speak with one of our managers.
+        
+        Q. What is the refund/cancellation policy for Personal Training?
+        A. All prepaid sessions are non-refundable and non-transferable. Scheduled sessions require a 24-hour cancellation notice or they will be charged. Prices are subject to change without notice and all sales are final.
         
         Q. How do I upgrade/downgrade my membership?
         A. You can upgrade or downgrade your membership by emailing membership@fitnesssf.com. 
