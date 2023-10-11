@@ -13,6 +13,8 @@ with open("ChatBotUI/static/js/script_base.js", "r", encoding='utf-8') as f:
     js_code= f.read()
 
 js_code = re.sub('"http://127.0.0.1:1563/"', f'"http://{IP}:{response_port}/"', js_code)
+print("js_code*********")
+print(js_code)
 with open("ChatBotUI/static/js/script.js", "w") as f:
     f.write(js_code)
     f.close()
@@ -24,7 +26,8 @@ STATIC_DIR = os.path.abspath('ChatBotUI/static')
 
 # app = Flask(__name__) # to make the app run without any
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
-CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
+# CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
+cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 @app.route('/')
