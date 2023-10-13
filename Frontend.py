@@ -5,14 +5,19 @@ import re
 from config import config, environment, ip_config
 from flask_csp import csp
 from flask_cors import CORS, cross_origin
-
+from flask import Flask, send_from_directory
+from flask import Flask, render_template, Response
+import requests
+import re
 # ===================================================================================================
 IP = ip_config[environment]
+print(IP)
 response_port = config['BotApplication']['Backend']  # response API
 
 with open("ChatBotUI/static/js/script_base.js", "r", encoding='utf-8') as f:
     js_code= f.read()
 
+print(js_code)
 js_code = re.sub('"http://127.0.0.1:1563/"', f'"http://{IP}:{response_port}/"', js_code)
 # print("js_code*********")
 # print(js_code)
@@ -21,34 +26,12 @@ with open("ChatBotUI/static/js/script.js", "w") as f:
     f.close()
 # ===================================================================================================
 
-
 TEMPLATE_DIR = os.path.abspath('ChatBotUI/templates')
 STATIC_DIR = os.path.abspath('ChatBotUI/static')
 
 # app = Flask(__name__) # to make the app run without any
 app = Flask(__name__, template_folder=TEMPLATE_DIR, static_folder=STATIC_DIR)
-# CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
-cors = CORS(app, resources={r"/*": {"origins": "*"}})
-
-app.config['CSP'] = {
-    'default-src': "'self'",
-    'script-src': ["'self'", "'unsafe-inline'", "'unsafe-eval'", "/static/"],
-    'style-src': ["'self'", "'unsafe-inline'", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", "/static/"],
-    'font-src': ["'self'", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", "/static/"],
-    'frame-src': [
-        "https://sf.clubautomation.com/",
-        "https://www.qa-1.chewba.info",
-        "https://www.qa-2.chewba.info",
-        "https://www.eatlove.is",
-        "https://www.youtube.com/",
-        "https://fsf-digital.s3.us-west-1.amazonaws.com/",
-        "http://18.144.92.141:5004"
-    ]
-}
-
-
-
-# csp(app)
+CORS(app, resources={r"/fitnesssf": {"origins": "http://localhost:3000"}})
 
 @app.route('/')
 @cross_origin(supports_credentials=True)
@@ -59,6 +42,10 @@ def index():
 @cross_origin(supports_credentials=True)
 def UltraBot():
     return render_template('fitnesssf.html')
+
+# @app.route('/static/<path:filename>')
+# def serve_static(filename):
+#     return send_from_directory('ChatBotUI/static', filename)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=config['BotApplication']['Frontend'])
